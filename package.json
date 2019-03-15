@@ -1,0 +1,21 @@
+{
+  "name": "httpproxy",
+  "version": "1.0.0",
+  "description": "HTTP Proxy",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo 'SUCCESS!'",
+    "deploy": "now --token $AUTH alias $(echo $(now --token $AUTH deploy)) httpproxy-$TRAVIS_BRANCH.now.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlyaLaska/HTTPProxy.git"
+  },
+  "author": "ILaska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlyaLaska/HTTPProxy/issues"
+  },
+  "homepage": "https://github.com/IlyaLaska/HTTPProxy#readme"
+}
