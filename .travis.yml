@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - "11.5.0"
 
-before_run:
+before_script:
 - npm ci
 - npm run lint
 - npm test
